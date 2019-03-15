@@ -1,0 +1,467 @@
+<robot
+  name="robot_with_4_tyres_trail_2">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.18763 -0.46527 0.29444"
+        rpy="0 0 0" />
+      <mass
+        value="23.121" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_with_4_tyres_trail_2/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_with_4_tyres_trail_2/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="bracket_1">
+    <inertial>
+      <origin
+        xyz="-0.00041116 0.00046262 0.14205"
+        rpy="0 0 0" />
+      <mass
+        value="1.1681" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_with_4_tyres_trail_2/meshes/bracket_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_with_4_tyres_trail_2/meshes/bracket_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="chassis_to_bracket_1"
+    type="continuous">
+    <origin
+      xyz="0.36638 -0.28458 0.014431"
+      rpy="5.126E-17 -1.3998E-16 2.5629" />
+    <parent
+      link="base_link" />
+    <child
+      link="bracket_1" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="tyre_1">
+    <inertial>
+      <origin
+        xyz="-0.00051614 0.00076562 0.00054978"
+        rpy="0 0 0" />
+      <mass
+        value="0.48511" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_with_4_tyres_trail_2/meshes/tyre_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_with_4_tyres_trail_2/meshes/tyre_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="bracket_1_to_tyre_1"
+    type="continuous">
+    <origin
+      xyz="0 0 0.05"
+      rpy="1.5708 -1.2666 -1.5708" />
+    <parent
+      link="bracket_1" />
+    <child
+      link="tyre_1" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="bracket_2">
+    <inertial>
+      <origin
+        xyz="-0.00041116 0.00046262 0.14205"
+        rpy="0 0 0" />
+      <mass
+        value="1.1681" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_with_4_tyres_trail_2/meshes/bracket_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_with_4_tyres_trail_2/meshes/bracket_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="chassis_to_bracket_2"
+    type="continuous">
+    <origin
+      xyz="0.36638 -0.64458 0.014431"
+      rpy="1.1097E-14 -1.1041E-14 1.4838" />
+    <parent
+      link="base_link" />
+    <child
+      link="bracket_2" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="tyre_2">
+    <inertial>
+      <origin
+        xyz="-0.00090127 0.00041481 0.00054978"
+        rpy="0 0 0" />
+      <mass
+        value="0.48511" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_with_4_tyres_trail_2/meshes/tyre_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_with_4_tyres_trail_2/meshes/tyre_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="bracket_2_to_tyre_2"
+    type="continuous">
+    <origin
+      xyz="0 0 0.05"
+      rpy="1.5708 -0.39736 -1.5708" />
+    <parent
+      link="bracket_2" />
+    <child
+      link="tyre_2" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="bracket_3">
+    <inertial>
+      <origin
+        xyz="-0.000411157905102433 0.000462615518899479 0.142051256124478"
+        rpy="0 0 0" />
+      <mass
+        value="1.16807188014664" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_with_4_tyres_trail_2/meshes/bracket_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_with_4_tyres_trail_2/meshes/bracket_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="chassis_to_bracket_3"
+    type="continuous">
+    <origin
+      xyz="0.006375 -0.28458 0.014431"
+      rpy="-1.1394E-16 -1.8781E-16 -2.9053" />
+    <parent
+      link="base_link" />
+    <child
+      link="bracket_3" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="tyre_3">
+    <inertial>
+      <origin
+        xyz="-0.000793116796545645 -0.000235661380051183 0.000549783439807557"
+        rpy="0 0 0" />
+      <mass
+        value="0.485110668682482" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_with_4_tyres_trail_2/meshes/tyre_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_with_4_tyres_trail_2/meshes/tyre_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="bracket_3_to_tyre_3"
+    type="continuous">
+    <origin
+      xyz="0 0 0.05"
+      rpy="1.5708 0.72689 -1.5708" />
+    <parent
+      link="bracket_3" />
+    <child
+      link="tyre_3" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="bracket_4">
+    <inertial>
+      <origin
+        xyz="-0.000411157905102488 0.000462615518899367 0.142051256124478"
+        rpy="0 0 0" />
+      <mass
+        value="1.16807188014664" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_with_4_tyres_trail_2/meshes/bracket_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_with_4_tyres_trail_2/meshes/bracket_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="chassis_to_bracket_4"
+    type="continuous">
+    <origin
+      xyz="0.006375 -0.64458 0.014431"
+      rpy="-1.4123E-16 -5.2055E-17 -2.1253" />
+    <parent
+      link="base_link" />
+    <child
+      link="bracket_4" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="tyre_4">
+    <inertial>
+      <origin
+        xyz="0.000300266985877651 0.000197291449146639 -0.000549783439807605"
+        rpy="0 0 0" />
+      <mass
+        value="0.485110668682483" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_with_4_tyres_trail_2/meshes/tyre_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_with_4_tyres_trail_2/meshes/tyre_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="bracket_4_to_tyre_4"
+    type="continuous">
+    <origin
+      xyz="0 0 0.05"
+      rpy="1.5708 -1.7347E-16 1.5708" />
+    <parent
+      link="bracket_4" />
+    <child
+      link="tyre_4" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+</robot>

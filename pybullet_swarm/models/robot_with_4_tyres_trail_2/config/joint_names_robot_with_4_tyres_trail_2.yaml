@@ -1,0 +1,1 @@
+controller_joint_names: ['chassis_to_bracket_1', 'bracket_1_to_tyre_1', 'chassis_to_bracket_2', 'bracket_2_to_tyre_2', 'chassis_to_bracket_3', 'bracket_3_to_tyre_3', 'chassis_to_bracket_4', 'bracket_4_to_tyre_4', ]
